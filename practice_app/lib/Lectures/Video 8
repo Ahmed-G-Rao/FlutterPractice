@@ -1,0 +1,43 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  void Login() async {
+    print("Hello");
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          appBar: AppBar(
+            title: Center(child: Text("LOGIN PAGE ")),
+          ),
+          body: Center(
+            child: Center(
+              child: Column(children: [
+                SizedBox(height: 50),
+                Container(
+                  width: 200,
+                  child: TextField(),
+                ),
+                SizedBox(height: 50),
+                Container(
+                  width: 200,
+                  child: TextField(),
+                ),
+                SizedBox(height: 50),
+                ElevatedButton(onPressed: Login, child: Text("Login"))
+              ]),
+            ),
+          ),
+        ));
+  }
+}

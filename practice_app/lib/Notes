@@ -1,0 +1,6 @@
+Row 
+me children
+mainAxisAlignment: MainAxisAlignment.spaceAround
+
+Column
+crossAxisAlignment: CrossAxisAlignment.spaceAround
